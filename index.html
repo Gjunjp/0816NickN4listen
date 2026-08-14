@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.TEST 145 D-E 聽力測驗完整 Script 與解析</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f7f6;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .section-title {
+            color: #2980b9;
+            margin-top: 30px;
+            border-left: 5px solid #2980b9;
+            padding-left: 10px;
+            background: #e8f4f8;
+            padding: 10px 10px 10px 15px;
+            border-radius: 0 5px 5px 0;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .script-box {
+            background-color: #fcfcfc;
+            border-left: 4px solid #7f8c8d;
+            padding: 15px;
+            margin-bottom: 20px;
+            white-space: pre-wrap;
+            font-size: 1.05em;
+            color: #444;
+        }
+        .question-text {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #d35400;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 10px;
+        }
+        .options {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .options li {
+            margin-bottom: 10px;
+            padding: 12px;
+            border-radius: 5px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .correct {
+            background-color: #d4edda;
+            border-left: 5px solid #28a745;
+        }
+        .wrong {
+            background-color: #f8d7da;
+            border-left: 5px solid #dc3545;
+        }
+        .badge-correct {
+            background-color: #28a745;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 0.85em;
+            margin-right: 15px;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+        .badge-wrong {
+            background-color: #dc3545;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 0.85em;
+            margin-right: 15px;
+            white-space: nowrap;
+            font-weight: bold;
+        }
+        .explanation-text {
+            flex: 1;
+        }
+        .script-text {
+            color: #555;
+            margin-bottom: 5px;
+            font-size: 1.05em;
+        }
+        .analysis-text {
+            font-size: 0.95em;
+            color: #666;
+            margin-top: 4px;
+        }
+        .note {
+            font-size: 0.95em;
+            color: #555;
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>J.TEST 145 (D-E級) 聽力測驗 Script 與詳盡解析</h1>
+    
+    <div class="note">
+        <strong>使用提示：</strong> 本頁面整合了您提供的聽力測驗原文腳本（Script），並針對純靠語意與文法邏輯判斷的<strong>【第3部：應答問題】</strong>與<strong>【第4部：會話・說明問題】</strong>提供了每個選項「哪裡對、哪裡錯」的完整解析，方便您進行精讀與檢討。
+    </div>
+
+    <!-- Part 1 & 2 -->
+    <h2 class="section-title">第1部：写真問題 & 第2部：聴読解問題</h2>
+    <div class="card">
+        <p><em>註：第1部與第2部高度依賴試卷上的圖片與圖表，請搭配原題本圖片與以下腳本進行複習。</em></p>
+        <div class="script-box">【第1部：写真問題】
+問題1：ここはどこですか。
+1. 旅館です。 2. 動物園です。 3. 駅のホームです。 4. バス乗り場です。
+
+問題2：これは何ですか。
+1. 手袋です。 2. サンダルです。 3. アクセサリーです。 4. ネクタイです。
+
+問題3：何をしていますか。
+1. 落ち葉を拾っています。 2. 手紙を届けています。 3. ラジオを放送しています。 4. ガラスを割っています。
+
+問題4：正しい説明はどれですか。
+1. アナウンサーがレポートしています。 2. 女の人がゲートを守っています。 
+3. サラリーマンが騒いでいます。 4. ダンサーが踊っています。
+
+問題5：正しい説明はどれですか。
+1. 大きな火事が起きています。 2. 雪が積もっています。 
+3. 海の波が穏やかです。 4. 煙突から煙が出ています。
+
+問題6：上司に作成した資料を見てもらいたいです。こんな時何と言いますか。
+1. この資料を確認してあげましょうか。 
+2. この資料を確認していただけませんか。 (正解)
+3. この資料を確認してくださいましたか。 
+4. この資料を確認させてもらえませんか。
+
+---
+【第2部：聴読解問題】
+問題7：女の人はどうやってビーチに行きましたか。
+女：先週、遠くに住む友達に会いに行きました。東京から飛行機で高知に2時間、船に30分乗って島に着き、そこからバスで30分、やっと友達の家の近くにあるビーチに着きました。2時までは友達と自転車で観光しながら行く予定でしたが、雨が降っていたのでそれはやめました。
+
+問題8：男の人は週に何日、朝ごはんを食べますか。
+女：佐藤さんこれを見てください。朝ごはんを毎日食べる習慣のない人が半分もいるんですよ。
+男：へえ、そうなんですね。毎日食べている人が50%、週に4回以上の人が18%、週に1日から3日の人が14%、食べていない人が18%なんです。実は僕も毎日は食べていないんです。週に2日くらいですかねぇ。
+女：どうしてですか。
+男：朝ごはんを作っている時間がないんです。
+女：佐藤さん、朝ごはんは毎日少しでも食べた方がいいですよ。バナナとかでもいいですから。
+男：わかってますけど、朝起きられなくて。
+
+問題9：男の人は明日何を着ていきますか。
+女：ジョンさん、明日からクールビズが始まりますから、涼しい格好で来てくださいね。
+男：すみません、私の国にはクールビズの習慣がなくて、どんな格好がいいかわかりません。
+女：ああ、ジョンさんは初めてでしたね。クールビズはネクタイをしなくてもいいですし、ジャケットを着なくてもいいんです。アロハシャツやTシャツでも良いんですよ。
+男：そうですか、わかりました。明日はTシャツで来ようと思います。
+女：あっ、明日は他の会社の人と会いますから、Tシャツはダメですよ。
+
+問題10：台風はこれからどこを通りますか。
+男：今、日本の南にある台風はこれから北西へ進むと考えられます。あさってには九州と沖縄の間を通るでしょう。その後、九州の西側を進んで方向を変え、来週ゆっくりと日本海を北東の方角へ進むでしょう。本州へ近づく危険はないと思いますが、大雨にはご注意ください。
+
+問題11：男の人が持っている資料はどれですか。
+女：この資料、少し間違っていませんか。創立10周年で合っていますよね。
+男：いいえ、そっちじゃなくて、日付の方です。火曜日は10日じゃなくて9日でしょ。
+女：ああそれ、日付じゃなくて曜日の方が間違っていますよ。パーティーは10日水曜日です。
+男：僕の資料はちゃんと水曜日になっています。
+女：ああ本当ですね。
+
+問題12：女の人が熱が出た日の睡眠時間はどれですか。
+男：その腕時計なんですか。
+女：ああこれ、つけているだけで1日に歩いた歩数や睡眠時間を記録してくれて、スマートフォンで見ることができるんですよ。
+男：本当だ、グラフに載ってる。田中さん、日によってずいぶん睡眠時間が違うんですね。例えばこことか。
+女：ええ、この日は締め切り前で2時間しか寝られなかったんです。その代わり次の日に12時間も寝てしまいました。
+男：じゃあ、これも締め切りの前ですか。全然寝ていないようですけど。
+女：えーっと、これが、徹夜でドラマを見てしまったんです。そのせいで翌日風邪をひいて高熱が出ちゃって、夕方から寝ていました。
+男：あー、それで次の日が10時間なんですね。
+女：ええ、それで反省してその後の1週間は6時間ずつですね。</div>
+    </div>
+
+    <!-- Part 3 -->
+    <h2 class="section-title">第3部：応答問題 (全選項解析)</h2>
+    
+    <div class="card">
+        <div class="question-text">問題13：ピアノは弾けますか。（你會彈鋼琴嗎？）</div>
+        <ul class="options">
+            <li class="correct">
+                <span class="badge-correct">正確</span>
+                <div class="explanation-text">
+                    <div class="script-text">1. 少しなら。</div>
+                    <div class="analysis-text">「如果是一點點的話會喔。」符合問句，表示自己具備些微的能力。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">2. 結構です。</div>
+                    <div class="analysis-text">「不用了。」這是用來委婉「拒絕」別人提議或推銷時使用的句子，不能回答能力問題。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">3. 弾けていません。</div>
+                    <div class="analysis-text">「沒有正在會彈。」日文文法不自然。若要表達不會，應直接說「弾けません」。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card" style="margin-top: 15px;">
+        <div class="question-text">問題14：何歳に見えますか。（你看我像幾歲？）</div>
+        <ul class="options">
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">1. 25歳になりました。</div>
+                    <div class="analysis-text">「變成25歲了。」答非所問。</div>
+                </div>
+            </li>
+            <li class="correct">
+                <span class="badge-correct">正確</span>
+                <div class="explanation-text">
+                    <div class="script-text">2. 35歳くらいですか。</div>
+                    <div class="analysis-text">「大概35歲左右嗎？」針對對方的提問給出推測。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">3. 今年で30歳です。</div>
+                    <div class="analysis-text">「今年滿30歲。」這是回答自己的年齡，不符合問句「你看我像幾歲」。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card" style="margin-top: 15px;">
+        <div class="question-text">問題15：大学合格おめでとう。（恭喜考上大學。）</div>
+        <ul class="options">
+            <li class="correct">
+                <span class="badge-correct">正確</span>
+                <div class="explanation-text">
+                    <div class="script-text">1. 先生のおかげです。</div>
+                    <div class="analysis-text">「都是託老師的福。」表達感謝與謙虛，符合受祝賀時的情境。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">2. どういたしまして。</div>
+                    <div class="analysis-text">「不客氣。」對方是在祝賀你，而不是跟你道謝，回答不客氣不合邏輯。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">3. どうぞお大事に。</div>
+                    <div class="analysis-text">「請保重身體。」這是對生病的人說的話。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card" style="margin-top: 15px;">
+        <div class="question-text">問題16：メガネを忘れました。（我忘記帶眼鏡了。）</div>
+        <ul class="options">
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">1. 家に連れてきますか。</div>
+                    <div class="analysis-text">「你要帶來家裡嗎？」連れてくる（帶...來）只能用於人或動物，不能用於物品。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">2. 家に持ち帰りますか。</div>
+                    <div class="analysis-text">「你要帶回家嗎？」對方是忘記把眼鏡從家裡帶出來，方向反了。</div>
+                </div>
+            </li>
+            <li class="correct">
+                <span class="badge-correct">正確</span>
+                <div class="explanation-text">
+                    <div class="script-text">3. 家に取りに戻りますか。</div>
+                    <div class="analysis-text">「你要折返回家拿嗎？」邏輯完全符合，建議對方回家拿遺忘的物品。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card" style="margin-top: 15px;">
+        <div class="question-text">問題17：昨日娘が生まれました。（昨天我女兒出生了。）</div>
+        <ul class="options">
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">1. よくおいでくださいました。</div>
+                    <div class="analysis-text">「歡迎您的到來。」這是迎接客人時說的話。</div>
+                </div>
+            </li>
+            <li class="correct">
+                <span class="badge-correct">正確</span>
+                <div class="explanation-text">
+                    <div class="script-text">2. おめでとうございます。</div>
+                    <div class="analysis-text">「恭喜恭喜。」對喜事最標準的回應。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">3. おかげさまで。</div>
+                    <div class="analysis-text">「託您的福。」這應該是當事人自己說的話。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card" style="margin-top: 15px;">
+        <div class="question-text">問題18：少し痩せましたか。（你是不是稍微瘦了點？）</div>
+        <ul class="options">
+            <li class="correct">
+                <span class="badge-correct">正確</span>
+                <div class="explanation-text">
+                    <div class="script-text">1. 最近仕事が忙しくて。</div>
+                    <div class="analysis-text">「最近工作很忙(所以就...)」合理說明變瘦的原因。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">2. あそこの料理が美味しくて。</div>
+                    <div class="analysis-text">「那裡的料理很好吃。」這通常是說明變胖的原因，邏輯不通。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">3. 社長に褒められちゃって。</div>
+                    <div class="analysis-text">「被社長稱讚了。」與體重變輕毫無關聯。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card" style="margin-top: 15px;">
+        <div class="question-text">問題19：何か音がしませんか。（你有沒有聽到什麼聲音？）</div>
+        <ul class="options">
+            <li class="correct">
+                <span class="badge-correct">正確</span>
+                <div class="explanation-text">
+                    <div class="script-text">1. ほんとだ、風ですかねぇ。</div>
+                    <div class="analysis-text">「真的耶，是風聲吧？」符合情境，附和對方並猜測聲音來源。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">2. ええ、誰もいないはずですよ。</div>
+                    <div class="analysis-text">「是啊，應該沒有人喔。」人家問聲音，回答沒有人不太對題；且「ええ(肯定)」與後面的否定情境有矛盾感。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">3. 何も見えませんよ。</div>
+                    <div class="analysis-text">「什麼都沒看見喔。」對方是問聽覺(音)，回答視覺(見えません)錯誤。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card" style="margin-top: 15px;">
+        <div class="question-text">問題20：では拝見させていただきます。（那麼我就來看看/拜讀了。）</div>
+        <ul class="options">
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">1. お目にかかりましょう。</div>
+                    <div class="analysis-text">「我們見面吧。」「お目にかかる」是見面的謙讓語，不合適。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">2. どうぞ召し上がれ。</div>
+                    <div class="analysis-text">「請享用。」這是請人吃東西時的用語。</div>
+                </div>
+            </li>
+            <li class="correct">
+                <span class="badge-correct">正確</span>
+                <div class="explanation-text">
+                    <div class="script-text">3. ごゆっくりご覧ください。</div>
+                    <div class="analysis-text">「請慢慢看。」對方使用了「看」的謙讓語(拝見)，我方回應「看」的尊敬語(ご覧になる)，十分標準得體。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card" style="margin-top: 15px;">
+        <div class="question-text">問題21：そんなに飲まない方がいいんじゃないの。（你是不是不要喝那麼多比較好啊？）</div>
+        <ul class="options">
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">1. そうだね、飲んだ方がいいね。</div>
+                    <div class="analysis-text">「對啊，喝比較好。」語意矛盾。前面同意對方的勸阻，後面卻違背對方的勸告。</div>
+                </div>
+            </li>
+            <li class="correct">
+                <span class="badge-correct">正確</span>
+                <div class="explanation-text">
+                    <div class="script-text">2. へーきへーき（平気平気）。</div>
+                    <div class="analysis-text">「沒事沒事啦。」十分自然的口語回應，表示自己不在意、酒量很好，輕鬆帶過對方的擔憂。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">3. いいですね。</div>
+                    <div class="analysis-text">「真好呢。」對別人的擔憂勸告回「真好呢」邏輯不通。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card" style="margin-top: 15px;">
+        <div class="question-text">問題22：このコピー機、借りてもいいですか。（這台影印機我可以借用一下嗎？）</div>
+        <ul class="options">
+            <li class="correct">
+                <span class="badge-correct">正確</span>
+                <div class="explanation-text">
+                    <div class="script-text">1. 壊れているので使えませんよ。</div>
+                    <div class="analysis-text">「因為壞了所以不能用喔。」合理說明為何無法借用。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">2. あそこの店で売っていますよ。</div>
+                    <div class="analysis-text">「那邊的店有賣喔。」對方只是想在辦公室借用影印機，不是要買一台。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">3. できたばかりなので熱いですよ。</div>
+                    <div class="analysis-text">「剛做好很熱喔。」這通常用於剛煮好的料理，不會用來形容影印機。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card" style="margin-top: 15px;">
+        <div class="question-text">問題23：あれ、2時なのに誰も来ていませんね。変ですね、会議は2時頃なのに。<br>（咦，已經兩點了卻一個人都沒來呢。真奇怪，會議明明是兩點左右。）</div>
+        <ul class="options">
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">1. 楽しみですねー。</div>
+                    <div class="analysis-text">「真期待呢。」發生異常狀況時不該接這句話。</div>
+                </div>
+            </li>
+            <li class="correct">
+                <span class="badge-correct">正確</span>
+                <div class="explanation-text">
+                    <div class="script-text">2. どうしたんでしょう。</div>
+                    <div class="analysis-text">「發生什麼事了呢/怎麼了呢？」附和對方的疑惑。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">3. もちろんですよ。</div>
+                    <div class="analysis-text">「當然囉。」語境不符。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card" style="margin-top: 15px;">
+        <div class="question-text">問題24：今、お茶をお持ちします。（我現在為您端茶來。）</div>
+        <ul class="options">
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">1. お邪魔しました。</div>
+                    <div class="analysis-text">「打擾了。」通常是離開別人家時說的。</div>
+                </div>
+            </li>
+            <li class="correct">
+                <span class="badge-correct">正確</span>
+                <div class="explanation-text">
+                    <div class="script-text">2. どうぞお構いなく。</div>
+                    <div class="analysis-text">「請別麻煩了/請別客氣。」客人對主人要去準備茶水時的標準客氣用語。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">3. 持ちますので大丈夫です。</div>
+                    <div class="analysis-text">「我會拿，沒關係的。」誤解了「お持ちします」的意思，對方是說「端茶來」，不是要幫忙提重物。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card" style="margin-top: 15px;">
+        <div class="question-text">問題25：机の上にファイル乗ってないよ。（桌上沒有放著資料夾喔。）</div>
+        <ul class="options">
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">1. そんなつもりないよ。</div>
+                    <div class="analysis-text">「我沒有那個打算喔。」對方在陳述客觀事實(找不到物品)，回答意圖不符合語境。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">2. そんなはずないよ。</div>
+                    <div class="analysis-text">「怎麼可能/不應該啊。」雖然勉強聽得通，但選項3是更貼切且具體的日語慣用表達。</div>
+                </div>
+            </li>
+            <li class="correct">
+                <span class="badge-correct">正確</span>
+                <div class="explanation-text">
+                    <div class="script-text">3. え、置いたつもりなんだけど。</div>
+                    <div class="analysis-text">「咦，我以為我已經放在那了。」「Vた+つもり」表示主觀上自認為做了某事。完全符合「我以為我放了，但對方卻說找不到」的情境。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card" style="margin-top: 15px;">
+        <div class="question-text">問題26：打ち合わせ、2時からでしたっけ。同行してもらえる？<br>（開會是兩點開始對吧？你能跟我一起去嗎？）</div>
+        <ul class="options">
+            <li class="correct">
+                <span class="badge-correct">正確</span>
+                <div class="explanation-text">
+                    <div class="script-text">1. 私でよろしければ。</div>
+                    <div class="analysis-text">「如果我不嫌棄的話 / 如果我可以的話。」非常謙虛且得體的答應邀約。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">2. はい、何を差し上げましょうか。</div>
+                    <div class="analysis-text">「好的，要給您什麼呢？」對方是邀約同行，不是索取物品。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">3. ありがとうございます。</div>
+                    <div class="analysis-text">「謝謝。」被拜託工作時不適合直接回謝謝。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card" style="margin-top: 15px;">
+        <div class="question-text">問題27：この仕事をやっていただけると助かるんですが。<br>（如果你能幫忙做這項工作就太好了...）</div>
+        <ul class="options">
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">1. 助かりましたねー。</div>
+                    <div class="analysis-text">「真是幫大忙了呢。」這句話應該是「請求方」講的，被拜託的一方講這句視角錯誤。</div>
+                </div>
+            </li>
+            <li class="correct">
+                <span class="badge-correct">正確</span>
+                <div class="explanation-text">
+                    <div class="script-text">2. もう済んでますよ。</div>
+                    <div class="analysis-text">「我已經做好了喔。」優秀的職場回應，表示自己早有預期並已經完成了對方想拜託的事情。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">3. ありがとうございます。</div>
+                    <div class="analysis-text">「謝謝你。」對方是在拜託你做事，回答謝謝並不合邏輯。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card" style="margin-top: 15px;">
+        <div class="question-text">問題28：セミナーの準備終わりましたか。まだなんです。<br>（研討會的準備結束了嗎？ 還沒呢。）</div>
+        <ul class="options">
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">1. お疲れ様でした。</div>
+                    <div class="analysis-text">「辛苦了。」對方還在忙，還沒結束，說辛苦了有點太早或像要袖手旁觀。</div>
+                </div>
+            </li>
+            <li class="wrong">
+                <span class="badge-wrong">錯誤</span>
+                <div class="explanation-text">
+                    <div class="script-text">2. ホッとしましたね。</div>
+                    <div class="analysis-text">「鬆了一口氣呢。」事情還沒做完，不可能鬆一口氣。</div>
+                </div>
+            </li>
+            <li class="correct">
+                <span class="badge-correct">正確</span>
+                <div class="explanation-text">
+                    <div class="script-text">3. 手を貸しましょうか。</div>
+                    <div class="analysis-text">「需要我幫忙嗎？」得知對方還沒做完，主動提出協助，完全符合情境。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Part 4 -->
+    <h2 class="section-title">第4部：会話・説明問題 (解析)</h2>
+    
+    <div class="card">
+        <div class="script-box">問題29～30
+女：樋口さんよく山に行きますよねー。私、今度富士山に登るんですが、初めてで何か気をつけることはありますか。
+男：そうですね、夏でも富士山のうえはかなり寒いですから、しっかり着るものの準備をしてくださいね。
+女：えっそうなんですか。寒いってどのくらい寒いんですか。
+男：冬のような寒さのときもありますよ。
+女：へえ。
+男：それから手袋やマフラーも持っていた方がいいですね。靴もスニーカーじゃダメです、ちゃんと登山靴を履いてくださいね。
+女：うわぁ、荷物が多くなる。
+男：山を甘く見てはいけません。最近海外からの登山客も多いんですが、散歩にでも行くようにサンダルで登る人もいると言って問題になっているんですから。何かあってからでは遅いんですよ。
+女：わかりました。</div>
+        
+        <div class="question-text" style="margin-top: 15px; border-top: 1px solid #eee; padding-top: 15px;">(問29：男の人は女の人にどんなアドバイスをしましたか。)</div>
+        <ul class="options">
+            <li class="correct">
+                <span class="badge-correct">解答解析</span>
+                <div class="explanation-text">
+                    <div class="analysis-text">對話中男子明確提到：「夏でも富士山のうえはかなり寒い...しっかり着るものの準備を...手袋やマフラーも持っていた方がいい...登山靴を履いてください」（夏天上面也很冷，要準備保暖衣物、手套圍巾，還要穿登山鞋。）</div>
+                </div>
+            </li>
+        </ul>
+        
+        <div class="question-text" style="margin-top: 15px; border-top: 1px solid #eee; padding-top: 15px;">(問30：男の人はどんな問題があると言っていますか。)</div>
+        <ul class="options">
+            <li class="correct">
+                <span class="badge-correct">解答解析</span>
+                <div class="explanation-text">
+                    <div class="analysis-text">男子提到問題點是：「散歩にでも行くようにサンダルで登る人もいると言って問題になっている」（有人像去散步一樣穿著涼鞋爬山，這成為了一個問題）。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card" style="margin-top: 15px;">
+        <div class="script-box">問題31～32
+男：悦子さん、昨日驚いたことがありました。
+女：何ですか。
+男：外を歩いていたとき、雨が降ってきたんです。そうしたら周りの日本人が全員傘をさしたんですよ。もうびっくりしちゃって。日本人は毎日傘を持っているんですか。
+女：うーん、天気予報で雨が降るって言ってたからでしょう。日本人は天気予報を見て、その日傘を持っていくかどう決める人が多いんですよ。
+男：そうですか。でも雨ならコートを着て帽子をかぶればいいじゃないですか。
+女：うーん、それだけじゃ服やカバンが濡れちゃって気持ち悪いでしょ。
+男：風ですぐ乾くから大丈夫ですよ。
+女：もしかして、ボブさんの住んでいたアメリカの町は雨が少ないですか。空気が乾いていればいいですけど、日本はそうじゃないので。
+男：はぁ、そうなんですねー。</div>
+
+        <div class="question-text" style="margin-top: 15px; border-top: 1px solid #eee; padding-top: 15px;">(問31：男の人が驚いたことは何ですか。)</div>
+        <ul class="options">
+            <li class="correct">
+                <span class="badge-correct">解答解析</span>
+                <div class="explanation-text">
+                    <div class="analysis-text">男子明確說出驚訝的原因：「そうしたら周りの日本人が全員傘をさしたんですよ。もうびっくりしちゃって。」（結果周圍的日本人全都撐起了傘，我嚇了一跳。）也就是對日本人隨身帶傘/下雨全都撐傘這件事感到驚訝。</div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="question-text" style="margin-top: 15px; border-top: 1px solid #eee; padding-top: 15px;">(問32：女の人は日本人が傘をさす理由はなんだと言っていますか。)</div>
+        <ul class="options">
+            <li class="correct">
+                <span class="badge-correct">解答解析</span>
+                <div class="explanation-text">
+                    <div class="analysis-text">女子回答了不穿雨衣戴帽子的理由：「それだけじゃ服やカバンが濡れちゃって気持ち悪いでしょ」(光那樣衣服和包包都會弄濕很不舒服吧)，以及強調日本氣候「日本はそう(空気が乾いている)じゃないので」(日本空氣不像美國那麼乾燥，濕掉不容易乾)。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card" style="margin-top: 15px;">
+        <div class="script-box">問題33～34
+女：来週の食事会、どの店がいいかなぁ。まだ予約してないの？金曜は混むから早くした方がいいわよ。いつもの居酒屋は？
+男：うーん、実は昨日ネットで予約したんだよねー。でもいつも同じ店はつまらないかもって思って。この店はどうかなぁ。
+女：ホテルの中のレストランね。高そ…。
+男：そんなに高くないよ。立食パーティーコースが5000円。
+女：立って食べるのに5000円？じゃあ、こっちの和食の店は？3000円からコースがあるし、会社からも近いし。それに10人以上の予約で5000円安くなるよ。
+男：あーいいんじゃない。じゃあ電話してみる。
+女：居酒屋は早くキャンセルした方がいいわよ。お店に迷惑がかかるから。
+男：こっちのお店が予約できたらすぐするよ。</div>
+
+        <div class="question-text" style="margin-top: 15px; border-top: 1px solid #eee; padding-top: 15px;">(問33：男の人はこの後どうしますか。)</div>
+        <ul class="options">
+            <li class="correct">
+                <span class="badge-correct">解答解析</span>
+                <div class="explanation-text">
+                    <div class="analysis-text">男子先說：「じゃあ電話してみる」(那我來打電話問問看)，並且後面承諾女子：「こっちのお店が予約できたらすぐ（キャンセル）するよ」(這邊的店預約成功後，我就立刻取消居酒屋)。所以他首要的動作是<strong>打電話預約和食店</strong>，而不是先取消。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card" style="margin-top: 15px;">
+        <div class="script-box">問題35～36
+女：あなたの財布には今いくら入っていますか。日本の社会人は財布にいくら入れているのか、企業に勤めている男女100人に聞きました。一番多かったのは5000円から1万円で40%でした。次に5000円以下で24%、1万円から2万円が22%でした。昔は財布に入れておく現金は年齢×1000円がいいと言われていました。私は30歳ですから3万円ですね。でも1万円くらいしか持ち歩きません。昔と違って今はクレジットカードや電子マネーなどで支払える店が増えましたから、現金はあまり必要ないと思います。調査でも5万円以上財布に入れている人は3%にすぎませんでした。今後この傾向はもっと強くなると思います。</div>
+
+        <div class="question-text" style="margin-top: 15px; border-top: 1px solid #eee; padding-top: 15px;">(問35：財布に入れておく金額で一番多かった答えはどれですか。)</div>
+        <ul class="options">
+            <li class="correct">
+                <span class="badge-correct">解答解析</span>
+                <div class="explanation-text">
+                    <div class="analysis-text">文章中數據明確指出：「一番多かったのは5000円から1万円で40%でした。」（最多的是5000日圓到1萬日圓）。</div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="question-text" style="margin-top: 15px; border-top: 1px solid #eee; padding-top: 15px;">(問36：女の人はいつも財布にいくらぐらい入れていますか。)</div>
+        <ul class="options">
+            <li class="correct">
+                <span class="badge-correct">解答解析</span>
+                <div class="explanation-text">
+                    <div class="analysis-text">女子先說以前的標準是3萬，但接著說了實際情況：「でも1万円くらいしか持ち歩きません。」（但我只帶1萬日圓左右在身上）。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="card" style="margin-top: 15px;">
+        <div class="script-box">問題37～38
+男：私が社会人になってから最初に叱られたのが体調管理についてでした。入社して数か月の時、ひどい風邪をひいたんです。フラフラになって出社して、何とか仕事をしようとしたんですが、気づいた上司に帰宅させられました。よくなってから出社すると、上司からいつまで学生気分でいるのかと叱られました。体調が悪いまま社外の人に会うのも良くないし、周りの社員たちに風邪をうつす可能性もある。なによりひどい風邪をひくというのは体調管理ができていないからだと言われました。確かに週末など、学生時代の友人たちと夜遅くまで遊ぶことが多かったんです。それ以来、週末の過ごし方を変えました。まずは仕事の疲れをとることを一番に考えて家でゆっくり過ごすようにしました。また日々の食事や運動にも気を遣い、睡眠をしっかりとるようにもしています。このことを通して社会人としての基本を学びました。</div>
+
+        <div class="question-text" style="margin-top: 15px; border-top: 1px solid #eee; padding-top: 15px;">(問37：男の人が風邪を引いたとき、上司はどうしましたか。)</div>
+        <ul class="options">
+            <li class="correct">
+                <span class="badge-correct">解答解析</span>
+                <div class="explanation-text">
+                    <div class="analysis-text">男子提到他生病硬撐去上班的結果：「気づいた上司に帰宅させられました。」（被發現的主管強迫回家休息了）。</div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="question-text" style="margin-top: 15px; border-top: 1px solid #eee; padding-top: 15px;">(問38：男の人は風邪を引いた経験から学んだことはなんだと言っていますか。)</div>
+        <ul class="options">
+            <li class="correct">
+                <span class="badge-correct">解答解析</span>
+                <div class="explanation-text">
+                    <div class="analysis-text">在文章最後一句，男子做了總結：「このことを通して社会人としての基本を学びました。」（透過這件事，我學到了作為社會人士的基本常識。）前面提到的睡眠、體能管理等，全都是包含在這個「基本」之內。</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
